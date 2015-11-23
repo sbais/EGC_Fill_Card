@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Holidays</title>
+	<style>
+		.content1 {
+			left:500px; top:160px;
+		}
+
+		.to1 {
+			left:280px; top:190px;
+		}
+
+		.amount1 {
+			left:650px; top:285px;
+		}
+
+		.from1 {
+			left:650px; top:230px;
+		}
+
+		.expiry1 {
+			left:650px; top:260px;
+		}
+
+		.to2 {
+			left:450px; top:800px;
+		}
+
+		.amount2 {
+			left:450px; top:840px;
+		}
+
+		.from2 {
+			left:450px; top:880px;
+		}
+
+		.soldby2 {
+			left:450px; top:920px;
+		}
+
+		.date2 {
+			left:620px; top:920px;
+		}
+
+		.to3 {
+			left:450px; top:1370px;
+		}
+
+		.amount3 {
+			left:620px; top:1405px;
+		}
+
+		.soldby3 {
+			left:450px; top:1475px;
+		}
+		
+		.date3 {
+			left:400px; top:1405px;
+		}
+
+		.from3 {
+			left:450px; top:1440px;
+		}
+
+		.to4 {
+			left:300px; top:1970px;
+		}
+		
+		.amount4 {
+			left:300px; top:2010px;
+		}
+
+		.from4 {
+			left:300px; top:2050px;
+		}
+
+		.soldby4 {
+			left:300px; top:2090px;
+		}
+		
+		.date4 {
+			left:500px; top:2090px;
+		}		
+
+		.common {
+			z-index:5; position:absolute; font-size:18px; font-weight: bold;
+		}
+</style>
+	<script>
+		function preview1() 
+		{
+			document.getElementById("content1").innerHTML = document.getElementById("x1").value;
+			document.getElementById("to1").innerHTML = document.getElementById("x2").value;
+			document.getElementById("from1").innerHTML = document.getElementById("x3").value;
+			document.getElementById("expiry1").innerHTML = document.getElementById("x4").value;
+			document.getElementById("amount1").innerHTML = document.getElementById("x5").value;
+		}
+
+		function preview2() 
+		{
+			document.getElementById("to2").innerHTML = document.getElementById("y1").value;
+			document.getElementById("amount2").innerHTML = document.getElementById("y2").value;
+			document.getElementById("from2").innerHTML = document.getElementById("y3").value;
+			document.getElementById("soldby2").innerHTML = document.getElementById("y4").value;
+			document.getElementById("date2").innerHTML = document.getElementById("y5").value;
+		}
+		function preview3() 
+		{
+			document.getElementById("to3").innerHTML = document.getElementById("z1").value;
+			document.getElementById("date3").innerHTML = document.getElementById("z2").value;
+			document.getElementById("amount3").innerHTML = document.getElementById("z3").value;
+			document.getElementById("from3").innerHTML = document.getElementById("z4").value;
+			document.getElementById("soldby3").innerHTML = document.getElementById("z5").value;
+		}
+		function preview4() 
+		{
+			document.getElementById("to4").innerHTML = document.getElementById("a1").value;
+			document.getElementById("amount4").innerHTML = document.getElementById("a2").value;
+			document.getElementById("from4").innerHTML = document.getElementById("a3").value;
+			document.getElementById("soldby4").innerHTML = document.getElementById("a4").value;
+			document.getElementById("date4").innerHTML = document.getElementById("a5").value;
+		}
+	</script>
+</head>
+<body>
+<div class="content">
+	<div class="firstcard">
+		<img src="holidays1.PNG" style="z-index:2;"/>
+		<br><br>
+		Entitles: 	   <input id="x1" type="text" name="Content1" value="Gift Card for Rekha"><br><br>
+		To: 		   <input id="x2" type="text" name="To1" value="Rekha"><br><br>
+		Authorized by: <input id="x3" type="text" name="From1" value="Harish"><br><br>
+		Expires: 	   <input id="x4" type="text" name="Expiry1" value="Sept 12, 2015"><br><br>
+		Amount: 	   <input id="x5" type="text" name="Amount1" value="$1000"><br><br>
+		<button onclick="preview1();">Preview</button>
+		<div id= "content1" class="content1 common">
+		</div>
+		<div id= "to1" class="to1 common">
+		</div>
+		<div id= "from1" class="from1 common">
+		</div>
+		<div id= "expiry1" class="expiry1 common">
+		</div>
+		<div id= "amount1" class="amount1 common">
+		</div>
+	</div>
+
+	<div class="secondcard">
+		<img src="holidays2.PNG" style="z-index:2;"/>
+		<br><br>
+		A gift for: 	<input id="y1" type="text" name="To2" value="Rekha"><br><br>
+		Valued at $: 	<input id="y2" type="text" name="Amount2" value="1000"><br><br>
+		From: 			<input id="y3" type="text" name="From2" value="Harish"><br><br>
+		Sold by: 		<input id="y4" type="text" name="Soldby2" value="Suning"><br><br>
+		Date: 			<input id="y5" type="text" name="Date2" value="Sept 12, 2015"><br><br>
+		<button onclick="preview2();">Preview</button>
+		<div id= "to2" class="to2 common">
+		</div>
+		<div id= "amount2" class="amount2 common">
+		</div>
+		<div id= "from2" class="from2 common">
+		</div>
+		<div id= "soldby2" class="soldby2 common">
+		</div>
+		<div id= "date2" class="date2 common">
+		</div>
+	</div>
+	<div class="thirdcard">
+		<img src="holidays3.PNG" style="z-index:2;"/>
+		<br><br>
+		To:      	<input id="z1" type="text" name="To3" value="Rekha"><br><br>
+		Date:    	<input id="z2" type="text" name="Date3" value="Sept 12, 2015"><br><br>
+		Value:  	<input id="z3" type="text" name="Amount3" value="$1000"><br><br>
+		From:    	<input id="z4" type="text" name="From3" value="Harish"><br><br>
+		Issued by: 	<input id="z5" type="text" name="Soldby3" value="Suning"><br><br>
+		
+		<button onclick="preview3();">Preview</button>
+		<div id= "to3" class="to3 common">
+		</div>
+		<div id= "date3" class="date3 common">
+		</div>
+		<div id= "amount3" class="amount3 common">
+		</div>
+		<div id= "from3" class="from3 common">
+		</div>
+		<div id= "soldby3" class="soldby3 common">
+		</div>
+		
+	</div>
+
+	<div class="fourthcard">
+		<img src="holidays4.PNG" style="z-index:2;"/>
+		<br><br>
+		To:      	   <input id="a1" type="text" name="To4" value="Rekha"><br><br>
+		Value $:  	   <input id="a2" type="text" name="Amount4" value="1000"><br><br>
+		From:    	   <input id="a3" type="text" name="From4" value="Harish"><br><br>
+		Authorized by: <input id="a4" type="text" name="Soldby4" value="Suning"><br><br>
+		Date:    	   <input id="a5" type="text" name="Date4" value="Sept 12, 2015"><br><br>
+		<button onclick="preview4();">Preview</button>
+		<div id= "to4" class="to4 common">
+		</div>
+		<div id= "amount4" class="amount4 common">
+		</div>
+		<div id= "from4" class="from4 common">
+		</div>
+		<div id= "soldby4" class="soldby4 common">
+		</div>
+		<div id= "date4" class="date4 common">
+		</div>
+	</div>
+</div>
+</body>
+</html>

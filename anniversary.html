@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anniversary Cards</title>
+	<style>
+		.to1 {
+			left:250px; top:160px;
+		}
+
+		.to2 {
+			left:250px; top:685px;
+		}
+
+		.amount1 {
+			left:250px; top:238px;
+		}
+
+		.amount2 {
+			left:250px; top:742px;
+		}
+
+		.from1 {
+			left:250px; top:200px;
+		}
+
+		.from2 {
+			left:250px; top:713px;
+		}
+
+		.expiry1 {
+			left:480px; top:238px;
+		}
+
+		.date2 {
+			left:250px; top:770px;
+		}
+
+		.common {
+			z-index:5; position:absolute; font-size:18px; font-weight: bold;
+		}
+</style>
+	<script>
+		function preview1() 
+		{
+			document.getElementById("to1").innerHTML = document.getElementById("x1").value;
+			document.getElementById("from1").innerHTML = document.getElementById("x2").value;
+			document.getElementById("amount1").innerHTML = document.getElementById("x3").value;
+			document.getElementById("expiry1").innerHTML = document.getElementById("x4").value;
+		}
+
+		function preview2() 
+		{
+			document.getElementById("to2").innerHTML = document.getElementById("y1").value;
+			document.getElementById("from2").innerHTML = document.getElementById("y2").value;
+			document.getElementById("amount2").innerHTML = document.getElementById("y3").value;
+			document.getElementById("date2").innerHTML = document.getElementById("y4").value;
+		}
+</script>
+</head>
+<body>
+<div class="content">
+	<div class="firstcard">
+		<img src="anniversary1.PNG" style="z-index:2;"/>
+		<br><br>
+		To:      		 <input id="x1" type="text" name="To1" value="Rekha"><br><br>
+		From:    		 <input id="x2" type="text" name="From1" value="Harish"><br><br>
+		Amount:  		 <input id="x3" type="text" name="Amount1" value="1000"><br><br>
+		Expiration Date: <input id="x4" type="text" name="Expiry1" value="Sept 12"><br><br>
+		<button onclick="preview1();">Preview</button>
+		<div id= "to1" class="to1 common">
+		</div>
+		<div id= "from1" class="from1 common">
+		</div>
+		<div id= "amount1" class="amount1 common">
+		</div>
+		<div id= "expiry1" class="expiry1 common">
+		</div>
+	</div>
+
+	<div class="secondcard">
+		<img src="anniversary2.PNG" style="z-index:2;"/>
+		<br><br>
+		To:     	 <input id="y1" type="text" name="To2" value="Rekha"><br><br>
+		From:   	 <input id="y2" type="text" name="From2" value="Harish"><br><br>
+		Amount Of:   <input id="y3" type="text" name="Amount2" value="1000"><br><br>
+		Issued Date: <input id="y4" type="text" name="Date2" value="Sept 2090"><br><br>
+		<button onclick="preview2();">Preview</button>
+		<div id= "to2" class="to2 common">
+		</div>
+		<div id= "from2" class="from2 common">
+		</div>
+		<div id= "amount2" class="amount2 common">
+		</div>
+		<div id= "date2" class="date2 common">
+		</div>
+	</div>
+</div>
+</body>
+</html>

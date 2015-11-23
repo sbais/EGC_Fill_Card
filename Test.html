@@ -1,0 +1,45 @@
+<html>
+<head>
+
+<style>
+.toName {
+	left:500px; top:245px;
+}
+
+.date {
+	left:400px; top:285px;
+}
+
+.group {
+	left:650px; top:285px;
+}
+
+.common {
+	z-index:5; position:absolute; font-size:18px; font-weight: bold;
+}
+
+</style>
+<script>
+function preview() {
+	document.getElementById("to").innerHTML = document.getElementById("i1").value;
+	document.getElementById("date1").innerHTML = document.getElementById("i2").value;
+	document.getElementById("group1").innerHTML = document.getElementById("i3").value;
+}
+</script>
+<head>
+
+<body>
+<img src="1a.jpg" style="z-index:2;"/>
+<br><br>
+To:   <input id="i1" type="text" name="Name" value="Mickey"><br><br>
+Date: <input id="i2" type="text" name="Date" value="Nov 10"><br><br>
+Group: <input id="i3" type="text" name="Group" value="Operations"><br><br>
+<button onclick="preview();">Preview</button>
+<div id= "to" class="toName common">
+</div>
+<div id= "date1" class="date common">
+</div>
+<div id= "group1" class="group common">
+</div>
+</body>
+</html>
